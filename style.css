@@ -976,4 +976,43 @@ body {
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.c-main {
+  padding: 50px;
+  background: linear-gradient(280deg, #d7fab7, #5be86e, #409b52,#004c3f);
+  display: flex;
+  margin: 20px 0px 20px 20px;
+}
+.map {
+margin: 20px;}
+.c-text {
+  padding: 20px;
+  margin: 5px;
+  height: fit-content;
+  color: green;
+  background: linear-gradient(0deg, #d7fab7, #5be86e);
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 2px gray;
+  transition: all 0.3s ease-in-out;
+}
 
+.c-text:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+@media  (max-width: 1000px) {
+  .c-main {
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    height: auto;
+    color: green;
+    background: linear-gradient(0deg, #d7fab7, #5be86e);
+    border-radius: 2px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  }
+  .map {
+    height: auto;
+    padding:10px;
+  }
+  
+}
