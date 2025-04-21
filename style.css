@@ -1040,6 +1040,8 @@ margin: 20px;}
   animation: none;
   transform: rotateY(0deg) rotateX(0deg) scale(1.05);
   z-index: 1;
+  background: linear-gradient(0deg, #033716, #10a300);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
 }
 .fp-box a {
   text-decoration: none;
