@@ -48,7 +48,7 @@ body {
 .Header-buttons a {
   color: #333;
   text-decoration: none;
-  background-color: #23d349;
+  background: linear-gradient(20deg, #004c3f, #23d349);
   padding: 5px;
   text-align: center;
   border-radius: 4px;
@@ -64,10 +64,27 @@ body {
 }
 
 .Header-buttons a:hover {
-  background-color: #aefcbf;
+  background: #e3e3e3;
   padding: 10px;
   margin-left: 15px;
   margin-right: 15px;
+  color:#004c3f;
+}
+.more {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  display: none;
+}
+.drop-downcontent {
+  position: relative;
+  display: inline-block;
+}
+.drop-downcontent:hover .more {
+  display: block;
 }
 
 .contact-icons {
@@ -226,16 +243,16 @@ body {
 }
 
 .welcome-text .heading p {
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .welcome-text .Details p {
   font-size: 1em;
   line-height: 1;
   text-align: justify;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:'Times New Roman', Times, serif; 
 }
 
 .boxes {
@@ -251,10 +268,10 @@ body {
 .boximg img {
   justify-content: center;
   flex: 0 0 auto;
-  width: 255px;
+  width: 300px;
   aspect-ratio: 4/3;
-  border-radius: 20px;
-  box-shadow: 2px 2px 5px 2px gray;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px rgb(11, 11, 11);
   transition: all 1s ease-in-out;
   animation: highlights 12s infinite;
   position: relative;
