@@ -216,7 +216,7 @@ body {
   overflow: hidden;
   object-fit: cover;
   justify-content: center;
-  background: linear-gradient(0deg, #f6f6f6, #abe6b3);
+  background: linear-gradient(0deg, #075075, #abe6b3);
   background-image: url("bgbanner.jpg");
   background-size: cover;
 }
@@ -226,11 +226,15 @@ body {
   margin: 5px;
   width: 65%;
   height: fit-content;
-  color: green;
-  background: linear-gradient(0deg, #d7fab7, #5be86e);
+  color: rgb(207, 217, 207);
+  background: linear-gradient(0deg, #0288a6, #033e0b);
   border-radius: 20px;
-  box-shadow: 2px 2px 5px 2px gray;
-  
+  box-shadow:1px 1px 0px 3px rgb(12, 117, 61);
+  transition: all 0.3s ease-in-out;
+}
+.welcome-text:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 
 .welcome-text .heading h3 {
@@ -249,10 +253,11 @@ body {
 }
 
 .welcome-text .Details p {
-  font-size: 1em;
+  font-size: 1.3em;
   line-height: 1;
   text-align: justify;
   font-family:'Times New Roman', Times, serif; 
+  
 }
 
 .boxes {
